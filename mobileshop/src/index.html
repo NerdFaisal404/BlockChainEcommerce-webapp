@@ -1,0 +1,537 @@
+
+
+<input value="http://bmelect.com" class="hide_baseUrl" type="hidden">
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="M_Adnan" />
+    <!-- Document Title -->
+    <title>Mobile Shop</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="mobile_shop/rs-plugin/css/settings.css" media="screen" />
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="mobile_shop/css/ionicons.min.css">
+    <link rel="stylesheet" href="mobile_shop/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mobile_shop/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mobile_shop/css/main.css">
+    <link rel="stylesheet" href="mobile_shop/css/style.css">
+    <link rel="stylesheet" href="mobile_shop/css/responsive.css">
+
+    <!-- Fonts Online -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+    <!-- JavaScripts -->
+    <script src="mobile_shop/js/vendors/modernizr.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .js_brand_wise_search{
+            width: 73% !important;
+            display: inline !important;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 30px;
+            height: 30px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<!-- Page Wrapper -->
+<div id="wrap" class="layout-1">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>Welcome to Mobile Shop!</p>
+            <div class="right-sec">
+                <ul>
+                    <li><a target="_blank" href="http://fascrv.com/mobile_shop/login.php">Login</a></li>
+                    <li><a target="_blank" href="http://fascrv.com/mobile_shop/product-upload.php">Product Upload</a></li>
+                    <li><a target="_blank" href="http://fascrv.com/mobile_shop/stock.php">Stock</a></li>
+                </ul>
+                <div class="social-top"> <a href="#."><i class="fa fa-facebook"></i></a> <a href="#."><i class="fa fa-twitter"></i></a> <a href="#."><i class="fa fa-linkedin"></i></a> <a href="#."><i class="fa fa-dribbble"></i></a> <a href="#."><i class="fa fa-pinterest"></i></a> </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"> <a href="/"><img src="mobile_shop/images/logo.png" alt="" ></a> </div>
+            <div class="search-cate">
+                <select class="selectpicker">
+                    <option value="">All</option><option value="nokia">NOKIA</option><option value="samsung">SAMSUNG</option><option value="oppo">OPPO</option><option value="huawei">HUAWEI</option><option value="sony">SONY</option><option value="symphony">SYMPHONY</option><option value="walton">WALTON</option><option value="htc">HTC</option><option value="lg">LG</option><option value="apple">APPLE</option>                </select>
+                <select class="form-control js_brand_wise_search"></select>
+                <button class="submit js_search" type="submit"><i class="icon-magnifier"></i></button>
+            </div>
+        </div>
+        <!-- Nav -->
+        <nav class="navbar ownmenu">
+            <div class="container">
+
+                <!-- Categories -->
+                <div class="cate-lst"> <a  data-toggle="collapse" class="cate-style" href="#cater"><i class="fa fa-list-ul"></i> Our Brands </a>
+                    <div class="cate-bar-in">
+                        <div id="cater" class="collapse">
+                            <ul>
+                                <li><a class="js_brand" href="javascript:void(0)" data-id=""> All</a><a class="js_brand" href="javascript:void(0)" data-id="nokia"> NOKIA</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="samsung"> SAMSUNG</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="oppo"> OPPO</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="huawei"> HUAWEI</a></li><li><a class="js_brand" href="javascript:void(0)" id="sony"> SONY</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="symphony"> SYMPHONY</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="walton"> WALTON</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="htc"> HTC</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="lg"> LG</a></li><li><a class="js_brand" href="javascript:void(0)" data-id="apple"> APPLE</a></li>                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navbar Header -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span><i class="fa fa-navicon"></i></span> </button>
+                </div>
+                <!-- NAV RIGHT -->
+                <div class="nav-right"> <span class="call-mun"><i class="fa fa-phone"></i> <strong>Hotline:</strong> +01737294279</span> </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slid Sec -->
+    <section class="slid-sec">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Main Slider  -->
+                    <div class="col-md-9 no-padding">
+
+                        <!-- Main Slider Start -->
+                        <div class="tp-banner-container">
+                            <div class="tp-banner">
+                                <ul>
+                                    <!-- SLIDE  -->
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                                        <!-- MAIN IMAGE -->
+                                        <img src="mobile_shop/images/apple.jpg"  alt="slider"  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-110"
+                                             data-speed="800"
+                                             data-start="800"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:30px; font-weight:500; color:goldenrod;  max-width: auto; max-height: auto; white-space: nowrap;">Apple</div>
+
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-60"
+                                             data-speed="800"
+                                             data-start="1000"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 6; font-size:50px; color:#0088cc; font-weight:800; white-space: nowrap;">Top Mobile Phone Brands</div>
+
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="10"
+                                             data-speed="800"
+                                             data-start="1200"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="none"
+                                             data-splitout="none"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 7;  font-size:24px; color:#888888; font-weight:500; max-width: auto; max-height: auto; white-space: nowrap;">Starting at </div>
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="210"
+                                             data-y="center" data-voffset="5"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:36px; font-weight:800; color:white;  max-width: auto; max-height: auto; white-space: nowrap;">BDT 26000 </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption lfb tp-resizeme scroll"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="80"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             data-scrolloffset="0"
+                                             style="z-index: 8;"><a href="brands.php?brand=apple" class="btn-round big">Shop Now</a> </div>
+                                    </li>
+
+
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                                        <!-- MAIN IMAGE -->
+                                        <img src="mobile_shop/images/samsung.jpg"  alt="slider"  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-110"
+                                             data-speed="800"
+                                             data-start="800"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:30px; font-weight:500; color:white;  max-width: auto; max-height: auto; white-space: nowrap;">SAMSUNG </div>
+
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-60"
+                                             data-speed="800"
+                                             data-start="1000"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 6; font-size:50px; color:#0088cc; font-weight:800; white-space: nowrap;">Top Mobile Phone Brands </div>
+
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="10"
+                                             data-speed="800"
+                                             data-start="1200"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="none"
+                                             data-splitout="none"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 7;  font-size:24px; color:#888888; font-weight:500; max-width: auto; max-height: auto; white-space: nowrap;">Starting at </div>
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="210"
+                                             data-y="center" data-voffset="5"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:36px; font-weight:800; color:green;  max-width: auto; max-height: auto; white-space: nowrap;">BDT 10000 </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption lfb tp-resizeme scroll"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="80"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             data-scrolloffset="0"
+                                             style="z-index: 8;"><a href="brands.php?brand=samsung" class="btn-round big">Shop Now</a> </div>
+                                    </li>
+
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                                        <!-- MAIN IMAGE -->
+                                        <img src="mobile_shop/images/oppo.jpg"  alt="slider"  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-110"
+                                             data-speed="800"
+                                             data-start="800"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:30px; font-weight:500; color:lightpink;  max-width: auto; max-height: auto; white-space: nowrap;">OPPO </div>
+
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-60"
+                                             data-speed="800"
+                                             data-start="1000"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 6; font-size:50px; color:#0088cc; font-weight:800; white-space: nowrap;">Mobile Shop </div>
+
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="10"
+                                             data-speed="800"
+                                             data-start="1200"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="none"
+                                             data-splitout="none"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 7;  font-size:24px; color:#888888; font-weight:500; max-width: auto; max-height: auto; white-space: nowrap;">Starting at </div>
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="210"
+                                             data-y="center" data-voffset="5"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:36px; font-weight:800; color:green;  max-width: auto; max-height: auto; white-space: nowrap;">BDT 13000 </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption lfb tp-resizeme scroll"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="80"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             data-scrolloffset="0"
+                                             style="z-index: 8;"><a href="brands.php?brand=oppo" class="btn-round big">Shop Now</a> </div>
+                                    </li>
+
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                                        <!-- MAIN IMAGE -->
+                                        <img src="mobile_shop/images/walton.jpg"  alt="slider"  data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-110"
+                                             data-speed="800"
+                                             data-start="800"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:30px; font-weight:500; color:black;  max-width: auto; max-height: auto; white-space: nowrap;">WALTON </div>
+
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="-60"
+                                             data-speed="800"
+                                             data-start="1000"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 6; font-size:50px; color:#0088cc; font-weight:800; white-space: nowrap;">Top Mobile Phone Brands in Bangladesh </div>
+
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption sfl tp-resizeme"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="10"
+                                             data-speed="800"
+                                             data-start="1200"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="none"
+                                             data-splitout="none"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             style="z-index: 7;  font-size:24px; color:#888888; font-weight:500; max-width: auto; max-height: auto; white-space: nowrap;">Starting at </div>
+
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption sfr tp-resizeme"
+                                             data-x="left" data-hoffset="210"
+                                             data-y="center" data-voffset="5"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-splitin="chars"
+                                             data-splitout="none"
+                                             data-elementdelay="0.03"
+                                             data-endelementdelay="0.4"
+                                             data-endspeed="300"
+                                             style="z-index: 5; font-size:36px; font-weight:800; color:green;  max-width: auto; max-height: auto; white-space: nowrap;">BDT 5000 </div>
+
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption lfb tp-resizeme scroll"
+                                             data-x="left" data-hoffset="60"
+                                             data-y="center" data-voffset="80"
+                                             data-speed="800"
+                                             data-start="1300"
+                                             data-easing="Power3.easeInOut"
+                                             data-elementdelay="0.1"
+                                             data-endelementdelay="0.1"
+                                             data-endspeed="300"
+                                             data-scrolloffset="0"
+                                             style="z-index: 8;"><a href="brands.php?brand=walton" class="btn-round big">Shop Now</a> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Slider  -->
+                    <div class="col-md-3 no-padding">
+
+                        <!-- New line required  -->
+                        <div class="product">
+                            <div class="like-bnr">
+                                <div class="position-center-center">
+                                    <h5>TODAYS BEST DEAL</h5>
+                                    <h4>Samsung J7</h4>
+                                    <span class="price">BDT 19500</span> </div>
+                            </div>
+                        </div>
+
+                        <!-- Weekly Slaes  -->
+                        <div class="week-sale-bnr">
+                            <h4>Weekly <span>Sale!</span></h4>
+                            <p>Saving up to 50% off all online
+                                store items this week.</p>
+                            <a href="#." class="btn-round">Shop now</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div id="content">
+
+        <!-- Top Selling Week -->
+        <section class="light-gry-bg padding-top-60 padding-bottom-30">
+            <div class="container">
+                <!-- heading -->
+                <div class="heading">
+                    <h2>Top Selling of the Week</h2>
+                    <hr>
+                </div>
+                <!-- Items -->
+                <div class="item-col-5 js_product_list">
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients img -->
+        <section class="light-gry-bg clients-img">
+            <div class="container">
+                <ul>
+                    <li><a href="javascript:void(0)" data-id="apple" class="js_brand"><img src="mobile_shop/images/brand/apple.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="huawei" class="js_brand"><img src="mobile_shop/images/brand/huwai.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="samsung" class="js_brand"><img src="mobile_shop/images/brand/samsung.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="sony" class="js_brand"><img src="mobile_shop/images/brand/sony.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="oppo" class="js_brand"><img src="mobile_shop/images/brand/oppo.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="htc" class="js_brand"><img src="mobile_shop/images/brand/htc.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="lg" class="js_brand"><img src="mobile_shop/images/brand/lg.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="nokia" class="js_brand"><img src="mobile_shop/images/brand/nokia.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="symphony" class="js_brand"><img src="mobile_shop/images/brand/symphony.jpg" alt="" ></a></li>
+                    <li><a href="javascript:void(0)" data-id="walton" class="js_brand"><img src="mobile_shop/images/brand/walton.jpg" alt="" ></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rights -->
+    <div class="rights">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Copyright © 2017 <a href="/" class="ri-li"> Mobile Shop </a>. All rights reserved</p>
+                </div>
+                <!--<div class="col-sm-6 text-right"> <img src="mobile_shop/images/card-icon.png" alt=""> </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- End Footer -->
+
+    <!-- GO TO TOP  -->
+    <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+    <!-- GO TO TOP End -->
+</div>
+<!-- End Page Wrapper -->
+
+<!-- JavaScripts -->
+<script src="mobile_shop/js/vendors/jquery/jquery.min.js"></script>
+<script src="mobile_shop/js/vendors/wow.min.js"></script>
+<script src="mobile_shop/js/vendors/bootstrap.min.js"></script>
+<script src="mobile_shop/js/vendors/own-menu.js"></script>
+<script src="mobile_shop/js/vendors/jquery.sticky.js"></script>
+<script src="mobile_shop/js/vendors/owl.carousel.min.js"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="mobile_shop/rs-plugin/js/jquery.tp.t.min.js"></script>
+<script type="text/javascript" src="mobile_shop/rs-plugin/js/jquery.tp.min.js"></script>
+<script src="mobile_shop/js/main.js"></script>
+
+
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/calc.js"></script>
+</body>
+</html>
